@@ -1,18 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/globos"
+    android:contentDescription="@string/app_name"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/imageView_Personaje"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_above="@+id/txt_nombre"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="88dp"
+        app:srcCompat="@drawable/manzana" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/txt_nombre"
+        android:layout_width="353dp"
+        android:layout_height="59dp"
+        android:layout_above="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/fondoet"
+        android:ems="10"
+        android:hint="@string/et_nombre"
+        android:inputType="textPersonName"
+        android:maxLength="15"
+        android:paddingHorizontal="50dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:textColor="@color/purple_200"
+        android:textColorHint="#51085E"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/textView_BestScore"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="67dp"
+        android:background="@drawable/fondoboton"
+        android:onClick="Jugar"
+        android:text="@string/btn_play"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView_BestScore"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/fondoet"
+        android:gravity="center"
+        android:textColor="#530A60"
+        android:textSize="24sp" />
+</RelativeLayout>

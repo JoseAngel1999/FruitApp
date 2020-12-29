@@ -9,13 +9,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FruitApp">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name=".MainActivity">
+
+
+        <intent-filter>
+
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+
+    </intent-filter>
+
+    </activity>
+
+        <activity android:configChanges="orientation|screenSize" android:name=".Main2Activity_Nivel1"/>
+
+        <activity android:configChanges="orientation|screenSize" android:name=".MainActivity2_Nivel2"/>
+
+        <activity android:configChanges="orientation|screenSize" android:name=".Main2Activity_Nivel3"/>
+
+        <activity android:configChanges="orientation|screenSize" android:name=".Main2Activity_Nivel4"/>
+
+        <activity android:configChanges="orientation|screenSize" android:name=".Main2Activity_Nivel5"/>
+
+        <activity android:configChanges="orientation|screenSize" android:name=".Main2Activity_Nivel6"/>
     </application>
 
 </manifest>
